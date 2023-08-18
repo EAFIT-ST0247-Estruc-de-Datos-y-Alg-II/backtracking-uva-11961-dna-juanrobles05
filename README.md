@@ -34,7 +34,7 @@ La evaluación está organizada de la siguiente manera:
 3. Descripción del mecanismo de backtracking: ¿Cuál es el criterio que utiliza para definir que no tiene sentido continuar con la exploración de la solución y 3. se debe deshacer la última decisión tomada?
 4. ¿Cómo calcula el número de permutaciones que hay en la respuesta?
 5. ¿Cómo cambiaría el algoritmo si en lugar de preguntar por todas las mutaciones preguntara solo por una? Justifique su respuesta.
-6. La definición de las clases utilizadas, en caso de haberlo hecho. Para cada clase debe definirse cuál es el dominio, i.e. los valores que son válidos, y cuáles son los métodos. Los métodos deben ser definidos siguiendo la misma estructura que se propone a continuación para las funciones. 
+6. La definición de las clases utilizadas, en caso de haberlo hecho. Para cada clase debe definirse cuál es el dominio, i.e. los valores que son válidos, y cuáles son los métodos. Los métodos deben ser definidos siguiendo la misma estructura que se propone a continuación para las funciones.
 7. La definición de cada función. Siguiendo la línea propuesta en CORBA[^1] se deben incluir los siguientes elementos:
     * Nombre de la función
     * Parámetros que recibe
@@ -52,5 +52,5 @@ La evaluación está organizada de la siguiente manera:
     * Utilizar variables globales
     * Incluir en los ciclos cálculos que no cambian en cada iteración
     * Nombres arbitrarios de variables o funciones (aleatorios o sin ninguna relación con la semántica de la variable o la función)
-    
+
 [^1]: CORBA es un acrónimo que quiere decir _Common Object Request Broker_ y fue propuesto en los 90s por el _Object Management Group_. Es un estándar para objetos distribuidos que continua en desarrollo permanente. En la página [http://www.ciaranmchale.com/corba-explained-simply/](http://www.ciaranmchale.com/corba-explained-simply/) encuentran una descripción detallada del estándar. Si bien es un tema avanzado que tiene que ver son la integración de sistemas heterogéneos, los conceptos que allí se presentan son muy importantes.
