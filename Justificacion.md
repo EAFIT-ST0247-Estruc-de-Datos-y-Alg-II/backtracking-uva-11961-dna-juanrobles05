@@ -22,7 +22,6 @@
 
 >Se eliminaria la recursion y se simplificaria el codigo ya que no queremos conocer todas las combinaciones posibles por lo que no es necesario explorarlas sino que simplemente preguntamospor una mutacion y la realizamos directamente en la posicion indicada.
 
-6. La definición de las clases utilizadas, en caso de haberlo hecho. Para cada clase debe definirse cuál es el dominio, i.e. los valores que son válidos, y cuáles son los métodos. Los métodos deben ser definidos siguiendo la misma estructura que se propone a continuación para las funciones.
 7. La definición de cada función. Siguiendo la línea propuesta en CORBA[^1] se deben incluir los siguientes elementos:
     * Funcion: `secuenciador_adn(N, secuencia, mutaciones_requeridas)`
     * Parámetros que recibe:
