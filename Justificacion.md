@@ -15,6 +15,9 @@
 >El criterio que se utiliza es formado apartir de lo siguiente: exploramos todas las combinaciones combinando cada letra  en cada posicion de la secuencia. luego para deshacer la ultima decision tenemos la funcion `generar_combinaciones` de manera recursiva en donde la ultima decision tomada es representada por la ultima llamada recursiva. Una vez se han completado todas las combinaciones posibles desde un punto especifico se regresa a ese punto y se continua con la proxima combinacion y por ultimo para saber donde parar utilizamos tambien la funcion `generar_combinaciones` ya que en esta cuando las `mutaciones_restantes` llegan a 0 se agrega la `secuencia_actual` a la lista `mutaciones`.
 
 4. ¿Cómo calcula el número de permutaciones que hay en la respuesta?
+
+>El numero de permutacuiones que hay en la respuesta se basa en como se generan las combinaciones debido a que en la funcion `generar_combinaciones` en cada llamada recursiva, se disminuye el valor de `mutaciones_restantes` en 1. Esto significa que en cada nivel de recursion exploramos tolas las combinaciones posibles y ya que nos aseguramos de explorar todas las combinaciones pero unicamente almacenar las que son unicas simplemente miramos el tamaño de `mutaciones` y esto nos dara el numero total de permutaciones.
+
 5. ¿Cómo cambiaría el algoritmo si en lugar de preguntar por todas las mutaciones preguntara solo por una? Justifique su respuesta.
 
 >Se eliminaria la recursion y se simplificaria el codigo ya que no queremos conocer todas las combinaciones posibles por lo que no es necesario explorarlas sino que simplemente preguntamospor una mutacion y la realizamos directamente en la posicion indicada.
