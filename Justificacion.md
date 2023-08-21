@@ -47,7 +47,13 @@
         >Esta función realiza una búsqueda exhaustiva para generar todas las combinaciones posibles de mutaciones en la secuencia actual. Comienza en el índice index y reemplaza la letra en esa posición con 'A', 'C', 'G' y 'T'. Luego, llama recursivamente a la función para continuar evaluando las mutaciones en las posiciones siguientes.
 
 
-| Nombre de la variable | Tipo de dato | Uso | Visibilidad | Ciclo de vida |
-|-----------------------|--------------|-----|-------------|---------------|
-| N                     | int          | Longitud de la secuencia de ADN. | Local | Desde la entrada hasta el fin de la función `secuenciador_adn`. |
-| secuencia             | str          | Secuencia de ADN original. | Local | Desde la entrada hasta el fin de la función `secuenciador_adn`. |
+| Nombre de la variable | Tipo de dato | Uso                                       | Visibilidad | Ciclo de vida                |
+|-----------------------|--------------|-------------------------------------------|-------------|------------------------------|
+| N                     | int          | Longitud de la secuencia de ADN.          | Local       | Desde la entrada hasta el fin de la función `secuenciador_adn`.                  |
+| secuencia             | str          | Secuencia de ADN original.                | Local       | Desde la entrada hasta el fin de la función `secuenciador_adn`.                  |
+| mutaciones_requeridas | int          | Número de mutaciones requeridas.          | Local       | Desde la entrada hasta el fin de la función `secuenciador_adn`.                  |
+| mutaciones            | set          | Conjunto que almacena las combinaciones de ADN mutadas. | Local   | Desde la creación hasta el fin de la función `secuenciador_adn`.                 |
+| letra                 | str          | Representa las letras 'A', 'C', 'G' y 'T'. | Local       | En el bucle interno de la función `generar_combinaciones`.                         |
+| nueva_secuencia       | str          | Secuencia resultante después de la mutación. | Local  | En el bucle interno de la función `generar_combinaciones`.                         |
+| T                     | int          | Número de casos de prueba.                | Local       | Desde la entrada hasta el fin del ciclo `for` principal.                  |                  |
+| mutacion              | str          | Una combinación mutada de ADN.             | Local       | En el bucle interno después de llamar a la función `secuenciador_adn`.          |
